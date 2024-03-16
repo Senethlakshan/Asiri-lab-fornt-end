@@ -1,0 +1,35 @@
+/* Add this style for the form image container */
+.form-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-image-container img {
+    width: 70%; /* Adjust the width based on your design */
+    max-width: 250px; /* Set a max-width if needed */
+    height: auto;
+    margin-top: 20px; /* Adjust the margin based on your design preference */
+  }
+  
+  /* Show image only on mobile and tablet views */
+  @media (min-width: 768px) {
+    .form-image-container {
+      display: none; /* Hide on desktop */
+    }
+  }
+  
+  /* Footer styles for mobile and tablet views */
+  @media (max-width: 1023px) {
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+  
