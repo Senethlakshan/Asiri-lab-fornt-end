@@ -6,6 +6,8 @@ import LoginAdmin from './pages/Dashboard/LoginAdmin';
 import ForgotPasswodAdmin from './pages/Dashboard/ForgotPasswodAdmin';
 import ResetPassword from './pages/Dashboard/ResetPassword';
 import DefaultLayout from './layout/DefaultLayout';
+import HomePage from './pages/Home/HomePage';
+import Register from './pages/Dashboard/Register';
 
 import Loader from './common/Loader';
 import routes from './routes';
@@ -14,7 +16,7 @@ import TestPage from './pages/TestPage';
 
 import { useDispatch } from 'react-redux';
 import { setUserID } from '../src/routes/userSlice';
-import axios from 'axios';
+// import axios from 'axios';
 
 
 function App() {
@@ -70,7 +72,9 @@ function App() {
         containerClassName="overflow-auto"
       />
       <Routes>
-        <Route index element={<LoginAdmin />} />
+        <Route index element={<HomePage/>} />
+        <Route path="/login" element={<LoginAdmin/>} />
+        <Route path="/register" element={<Register/>} />
         <Route path="/forgot-password" element={<ForgotPasswodAdmin />} />
         <Route path="/reset-password" element={<ResetPassword />} />
        
